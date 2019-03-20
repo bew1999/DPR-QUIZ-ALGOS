@@ -1,0 +1,27 @@
+
+public class BinarySearch {
+
+	public static void main(String[] args) {
+		
+		int[] sortedArray = {2,4,5,6,7,9,10,11,13,18,19,21,24,26,28};
+		int key = 21;
+		int low = 0;
+		int high = sortedArray.length;
+		int index = Integer.MAX_VALUE;
+		
+		while (low <= high) {
+	        int mid = (low + high) / 2;
+	        if (sortedArray[mid] < key) {
+	            low = mid + 1;
+	        } else if (sortedArray[mid] > key) {
+	            high = mid - 1;
+	        } else if (sortedArray[mid] == key) {
+	            index = mid;
+	            break;
+	        }
+	    }
+		System.out.println(key + " is at position " + (index+1));
+
+	}
+
+}
