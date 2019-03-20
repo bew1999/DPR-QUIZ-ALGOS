@@ -8,4 +8,4 @@ Algorithm Quiz 1
  The program sheevpalpatine.java checks whether the string entered is a palindrome (a word, phrase, or sequence that reads the same backward as forward)
   <li>Is a selection sort or a bubble sort faster?</li>
  </ol>
- A selection sort is faster.
+  A selection sort is faster.
